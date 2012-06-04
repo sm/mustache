@@ -1,32 +1,36 @@
-  NAME
+    NAME
 
-  sm-mustache - Mustache template command line
+    sm-mustache - Mustache template command line
 
-  SYNOPSIS
+    SYNOPSIS
 
-  Usage of ./sm-mustache:
-    -data="{key1=value1}:~{key2=value2}": key=value data pair, overrides json file data
-    -json="{string}": json data string
-    -output="{file}": path to output file
-    -template="{file}": path to template file
+      sm-mustache [options]
 
-    -data|--data "{key1=value1:~key2=value2}
+    OPTIONS
 
-      Assign a value to a given key for the template rendering
-    
-    -json|--json "{string}"
-      
-      To be implemented
+      -data="{key1=value1}:~{key2=value2}": key=value data pair, overrides json file data
+      -json="{string}": json data string
+      -output="{file}": path to output file
+      -template="{file}": path to template file
 
-    -output|--output "{file}"
+      -data|--data "{key1=value1:~key2=value2}
 
-      specify the output file to write the rendered template to
+        Assign a value to a given key for the template rendering
 
-    -template|--template "{file}"
+      -json|--json "{string}"
 
-      specify the template file to use
-   
-  DESCRIPTION
+        To be implemented
 
-  sm-mustache will read the given template file, and using the given data render 
-  it to the specified output file location.
+      -output|--output "{file}"
+
+        specify the output file to write the rendered template to
+
+      -template|--template "{file}"
+
+        specify the template file to use
+
+    DESCRIPTION
+
+    sm-mustache will read the given template file, and using the given data render
+    it to the specified output file location.
+
